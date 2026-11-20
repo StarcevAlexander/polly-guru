@@ -1,15 +1,15 @@
-> **DEPRECATED:** this crate has been renamed to [`polly-guru`](https://crates.io/crates/polly-guru). New code should depend on `polly-guru`.
-
-# pollyguru
+# polly-guru
 
 **Polly-style resilience for Rust** — retry with exponential backoff and jitter, plus a thread-safe circuit breaker, zero dependencies.
+
+Formerly published on crates.io as `pollyguru`.
 
 For developers coming from C#'s [Polly](https://github.com/App-vNext/Polly) or Python's [tenacity](https://github.com/jd/tenacity) who want familiar resilience primitives without a framework.
 
 ## Retry
 
 ```rust
-use pollyguru::RetryPolicy;
+use polly_guru::RetryPolicy;
 use std::time::Duration;
 
 fn main() {
@@ -33,7 +33,7 @@ fn main() {
 ## Circuit breaker
 
 ```rust
-use pollyguru::{CircuitBreaker, CircuitError};
+use polly_guru::{CircuitBreaker, CircuitError};
 use std::time::Duration;
 
 let breaker = CircuitBreaker::new(3, Duration::from_secs(30));
