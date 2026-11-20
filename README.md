@@ -1,3 +1,5 @@
+> **DEPRECATED:** this crate has been renamed to [`polly-guru`](https://crates.io/crates/polly-guru). New code should depend on `polly-guru`.
+
 # pollyguru
 
 **Polly-style resilience for Rust** — retry with exponential backoff and jitter, plus a thread-safe circuit breaker, zero dependencies.
